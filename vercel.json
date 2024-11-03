@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/last",
+            "dest": "index.js"
+        },
+        {
+            "src": "/api/coin",
+            "dest": "index.js"
+        },
+        {
+            "src": "/api/trades",
+            "dest": "index.js"
+        },
+        {
+            "src": "/api/koth",
+            "dest": "index.js"
+        }
+    ]
+}
